@@ -38,7 +38,7 @@ model {
   lambda ~ gamma(.001, .001);
   
   // Data
-  x ~ multi_normal(mu, T);
+  x[2] ~ multi_normal(mu, T);
 }"
 
 # Choose a dataset:
